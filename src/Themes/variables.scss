@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+*{
+    font-family: 'Bangers', cursive;
+    cursor:url("https://img.icons8.com/fluent/96/000000/hand-cursor--v2.png"), auto;
+}
+$Black:#000;
+$Orange:#FF851B;
+$White : #fff;
+$Blue : #0074D9;
+$VLBorder:#eaeaea2e;
+$Red:#e50404;
+$Gold:#ffc700;
+
+body{
+  background: $Red;
+}
+a{
+  text-decoration: none;
+  color:$White;
+  &:hover{
+    color:$Red;
+  }
+}
+
+@mixin flexLayout(){
+    display: flex;
+}
+
+@mixin fontStyle($size: false, $color: false, $weight: false) {
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $color {
+    color: $color;
+  }
+
+  @if $weight {
+    font-weight: $weight;
+  }
+}

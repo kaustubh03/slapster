@@ -1,0 +1,32 @@
+@import "../../Themes/variables.scss";
+
+.wrapper{
+    @include flexLayout();
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    border:none;
+    height: 100px;
+    border-radius:5px;
+    box-shadow: 0px 3px 12px 3px #00000014;
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+    background:$Orange;
+    color:$White;
+    text-align:center;
+    .childrenHolder{
+        @include flexLayout();
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        .dockChild{
+            margin:10px;
+            &:first-child{
+                border-right:1px solid #eaeaea;
+                padding-right:15px;
+            }
+        }
+    }
+    
+}

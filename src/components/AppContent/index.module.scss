@@ -1,0 +1,181 @@
+@import '../../Themes/variables.scss';
+
+.layoutParent{
+    .sideBar{
+       position: absolute;
+       right:0; 
+    }
+    .bottomBar{
+      top: 0;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .activeLogo{
+      position:fixed;
+      left:5px;
+      top:5px;
+      img{
+        width:150px;
+      }
+    }
+    .content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color:$White;
+      .credits{
+        letter-spacing: 1.5px;
+        position: fixed;
+        left: 5px;
+        top: 3px;
+      }
+      .logo{
+        width:500px;
+      }
+      .subtitle{
+        font-size:70px;
+        color:$White;
+      }
+      .rules{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        span{
+          font-size:40px;
+          margin-bottom:10px;
+          color:$White;
+        }
+      }
+      .disclaimer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        
+        span{
+          font-size:20px;
+          margin-bottom:10px;
+          color:$White;
+        }
+        .icons{
+          img{
+            width:24px;
+          }
+        }
+      }
+    }
+    .subjectWrapper{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      height:98vh;
+      .name{
+        color:$White;
+        font-size: 24px;
+      }
+      img{
+        width:450px;
+        cursor:url("https://img.icons8.com/officel/80/000000/hand.png"), auto;
+      }
+    }
+}
+
+.hit {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.gameOverParent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:$White;
+  .title{
+    font-weight:700;
+    font-size: 60px;
+    letter-spacing: 4.8px;
+  }
+  .subtitle{
+    font-size:20px;
+    letter-spacing: 0.8px;
+  }
+  .actionBtns{
+    margin-top:20px;
+    span{
+      padding: 20px;
+      font-size: 40px;
+      border: 1px solid #eaeaea;
+      &:first-child{
+        background: $Orange;
+        margin-right:5px;
+      }
+      &:nth-child(2){
+        background: $Red;
+      }
+    }
+    
+  }
+  .coolStuffHeader{
+      margin-top:20px;
+      font-size:20px;
+    }
+  .coolStuff{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:25px;
+    
+   img.icon{
+     width:45px;
+     height:45px;
+   }
+  }
+  .button{
+    margin-right:5px;
+    width: 100px;
+    height: 100px;
+    background: $White;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #000;
+    span{
+      text-decoration: overline;
+      font-size:45px;
+      color:$Black;
+      font-weight: 900;
+      font-family:monospace;
+      color:$Blue
+    }
+    &:hover{
+      background: $Red;
+    }
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}

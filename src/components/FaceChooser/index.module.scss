@@ -1,0 +1,24 @@
+@import "../../Themes/variables.scss";
+
+.wrapper{
+    @include flexLayout();
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    border-left:2px solid $VLBorder;
+    border-bottom:2px solid $VLBorder;
+    cursor:url("https://img.icons8.com/fluent/96/000000/hand-cursor--v2.png"), auto;
+    .facePane{
+        width: 160px;
+        height: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            background:$White;
+        }
+        img{
+            width:100px;
+        }
+    }
+}

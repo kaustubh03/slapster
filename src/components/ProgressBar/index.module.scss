@@ -1,0 +1,40 @@
+@import '../../Themes/variables.scss';
+* {
+	box-sizing: border-box;
+}
+
+.progress {
+	background-color: #d8d8d8;
+	border:3px solid #000;
+	position: relative;
+	height: 30px;
+    width: 200px;
+    font-weight:800;
+}
+
+.progressDone {
+    color: #fafafa;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+}
+
+.blue{
+    background: linear-gradient(to left, #70b0f2, #3f8edf);
+}
+.red{
+    background: linear-gradient(to left, #e50404, #b60404);
+}
+.gold{
+    background: linear-gradient(to left, #ffc700, #d9ae18);
+   
+}
+.green{
+    background: linear-gradient(to left, #78f270, #2ead26);
+    
+ 
+}
