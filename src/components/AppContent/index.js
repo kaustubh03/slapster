@@ -148,6 +148,13 @@ class AppContent extends Component {
     } = this.state;
     
     return (
+      <>
+        <div className={s.warning}>
+        <span>
+          Oops! Sorry Slapster is supported only on Desktop For now.
+          Soon it will be supporting mobile too.
+        </span>
+      </div>
       <div className={s.layoutParent}>
         {currentCharacter && (
           <div className={s.activeLogo}>
@@ -252,6 +259,7 @@ class AppContent extends Component {
           </div>
         </div>}
       </div>
+      </>
     );
   }
 }

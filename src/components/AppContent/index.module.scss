@@ -1,5 +1,8 @@
 @import '../../Themes/variables.scss';
-
+.warning{
+  display:none;
+  height:100vh;
+}
 .layoutParent{
     .sideBar{
        position: absolute;
@@ -177,5 +180,20 @@
 
   40%, 60% {
     transform: translate3d(4px, 0, 0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .layoutParent{
+    display: none;
+  }
+  .warning{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:$White;
+    padding: 30px;
+    text-align: center;
+    font-size: 50px;
   }
 }
