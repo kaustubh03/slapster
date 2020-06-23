@@ -60,7 +60,6 @@ class AppContent extends Component {
     );
     
     const character_ = { ...character };
-    console.log(character_);
     this.setState({ currentCharacter: character_, characterMean: mean });
   };
 
@@ -132,6 +131,10 @@ class AppContent extends Component {
         window.location.href = 'https://www.linkedin.com/in/kaustubh-saxena-b953ba27/';
         break;
     }
+  }
+
+  closeTab = () =>{
+    window.location.href ="https://www.youtube.com/watch?v=r_0JjYUe5jo";
   }
 
   render() {
