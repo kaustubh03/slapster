@@ -89,8 +89,8 @@ class AppContent extends Component {
 
       var snd = new Audio(slap);
       snd.play();
-      let currentMood = this.getCurrentMood(currentChar_.stats.health);
       let health_ = health - characterMean;
+      let currentMood = this.getCurrentMood(health_);
 
       this.setState({
         className: s.hit,
