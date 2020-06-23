@@ -119,7 +119,7 @@ class AppContent extends Component {
   onClickHandler = (type) =>{
     switch(type){
       case "github":
-        window.location.href = 'https://www.github.com/kaustubh03/snapster';
+        window.location.href = 'https://github.com/kaustubh03/slapster';
         break;
       case "meridian":
         window.location.href = 'https://meridian.epsilon.now.sh/';
