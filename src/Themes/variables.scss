@@ -13,6 +13,7 @@ $Gold:#ffc700;
 
 body{
   background: $Red;
+   touch-action: manipulation;
 }
 a{
   text-decoration: none;
