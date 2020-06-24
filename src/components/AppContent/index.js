@@ -23,11 +23,6 @@ import Button from '../Button';
 
 
 
-type Props = {};
-type State = {};
-
-
-
 class AppContent extends Component {
   state = {
     currentCharacter: null,
@@ -162,9 +157,6 @@ class AppContent extends Component {
           </div>
         )}
 
-        <div className={`${s.sideBar}`}>
-          <FaceChooser onChoose={this.onCharacterChoose} characters={characters} />
-        </div>
 
         {!currentCharacter && (
           <div className={s.content}>
@@ -189,7 +181,11 @@ class AppContent extends Component {
           </div>
         )}
 
-        {currentCharacter && (
+          <div className={`${s.sideBar}`}>
+            <FaceChooser onChoose={this.onCharacterChoose} characters={characters} />
+          </div>
+
+          {currentCharacter && !gameOver && (
           <div className={s.bottomBar}>
             <Docker data={currentCharacter} currenthealth={health} />
           </div>

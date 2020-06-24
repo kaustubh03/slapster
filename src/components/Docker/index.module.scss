@@ -30,3 +30,20 @@
     }
     
 }
+
+@media screen and (max-width: 768px) {
+    .wrapper{
+        width:100%;
+        height:auto;
+        .childrenHolder{
+            flex-direction: column-reverse;
+            .dockChild{
+                margin:2px;
+                &:first-child{
+                    border-right:none;
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+}

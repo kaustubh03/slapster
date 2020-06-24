@@ -7,6 +7,7 @@
     .sideBar{
        position: absolute;
        right:0; 
+       top:0;
     }
     .bottomBar{
       top: 0;
@@ -185,15 +186,92 @@
 
 @media screen and (max-width: 768px) {
   .layoutParent{
-    display: none;
+    // display: none;
+    .sideBar{
+       position: relative;
+       margin:auto;
+    }
+    .activeLogo{
+      position:relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .bottomBar{
+      top: 0;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .content{
+      .credits{
+        letter-spacing: 1.5px;
+        position: absolute;
+        width:100%;
+        text-align:center;
+        top: 3px;
+      }
+      .subtitle{
+        font-size: 30px;
+        color: $White;
+        text-align: center;
+      }
+      .rules{
+        span{
+          font-size: 25px;
+          margin-bottom: 10px;
+          color: #fff;
+          text-align: center;
+        }
+      }
+    .disclaimer{
+      text-align: center;
+    }
+    .logo{
+        width: 200px;
+        margin-top: 30px;
+      }
+    
+    }
+    .subjectWrapper{
+      justify-content: unset;
+      padding-top: 20px;
+      height: 60vh;
+
+      img{
+        width:350px;
+      }
+    }
   }
   .warning{
-    display:flex;
+    display:none;
     justify-content: center;
     align-items: center;
     color:$White;
     padding: 30px;
     text-align: center;
     font-size: 50px;
+  }
+  .gameOverParent{
+        text-align: center;
+        .subtitle{
+          padding: 50px;
+        }
+        .actionBtns{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          span{
+            margin-bottom:20px;
+          } 
+        }
+        .button{
+          width: 70px;
+          height: 70px;
+          margin-bottom: 10px;
+        }
   }
 }
