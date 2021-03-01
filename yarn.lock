@@ -9945,10 +9945,10 @@ three.interaction@^0.2.2:
   resolved "https://registry.yarnpkg.com/three.interaction/-/three.interaction-0.2.2.tgz#01ce80ba7cacd24ada09dc57f1d64e9dd5d7a0b0"
   integrity sha512-yWQ5L0SUl+TzxVGFRNZAf4hpRF84zYZVpcyGstzhO0vbRdUDobPiPV6QmUh0JZVS5gEUguAd09ONyNJEczMOyA==
 
-three@^0.105.1:
-  version "0.105.1"
-  resolved "https://registry.yarnpkg.com/three/-/three-0.105.1.tgz#323fc31e19b25eec408a84f8401ea6dbe42a32bb"
-  integrity sha512-Oa6dfF3qsgS/mmeNB+nKgcQBq71Ucxv8TdmVS+lNjLzG/GAIgvrTDTKmtvxXd7tXDv7RXmEprcmzO3JiT0UDsA==
+three@^0.125.0:
+  version "0.125.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.125.0.tgz#19e922b9dc51ad0b706893aeee888de68e99850a"
+  integrity sha512-qL36qUGsPQ/Ofo/RZdXwHwM7A8wzUSAIyawtjIebJSPvounUQeneSqxI0aBY2iwKpseGy+RUtj3C5f/z4poyXw==
 
 throat@^4.0.0:
   version "4.1.0"
